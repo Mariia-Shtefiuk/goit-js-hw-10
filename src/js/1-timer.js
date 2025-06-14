@@ -1,14 +1,9 @@
-import flatpickr from 'flatpickr';
-import 'flatpickr/dist/flatpickr.min.css';
-import iziToast from 'izitoast';
-import 'izitoast/dist/css/iziToast.min.css';
-
 const dateInput = document.querySelector('#datetime-picker');
 const startBtn = document.querySelector('[data-start]');
 startBtn.disabled = true;
 let selectedDate;
 
-const options = {
+flatpickr('#datetime-picker', {
   enableTime: true,
   time_24hr: true,
   defaultDate: new Date(),
@@ -29,9 +24,7 @@ const options = {
       startBtn.disabled = true;
     }
   },
-};
-
-flatpickr(dateInput, options);
+});
 
 startBtn.addEventListener('click', handleClick);
 

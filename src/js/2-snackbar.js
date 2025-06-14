@@ -1,8 +1,6 @@
-import iziToast from 'izitoast';
-import 'izitoast/dist/css/iziToast.min.css';
-
 const form = document.querySelector('.form');
 form.addEventListener('submit', handleSubmit);
+
 function handleSubmit(event) {
   event.preventDefault();
   const delayInput = event.currentTarget.querySelector('input[name="delay"]');

@@ -27,14 +27,20 @@ body {
   margin: 0;
 }
 
-#datetime-picker {
+.timepicker {
+  display: flex;
+  gap: 8px;
   margin-bottom: 32px;
-  margin-right: 8px;
+  height: 40px;
+}
+
+#datetime-picker {
   width: 272px;
   padding: 8px 16px;
   border: 1px solid #808080;
   outline: none;
   border-radius: 4px;
+  font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -95,7 +101,6 @@ button[data-start] {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #989898;
-  margin-top: 20px;
   background-color: #4e75ff;
   color: #fff;
   border: none;
