@@ -11,8 +11,6 @@ function handleSubmit(event) {
   const delay = Number(delayInput.value);
   const state = stateInput.value;
 
-  console.log(delay, state);
-
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
       if (state === 'fulfilled') {

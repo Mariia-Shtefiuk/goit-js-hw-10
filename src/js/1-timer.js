@@ -10,7 +10,6 @@ flatpickr('#datetime-picker', {
   minuteIncrement: 1,
   onClose(selectedDates) {
     selectedDate = selectedDates[0];
-    console.log(selectedDate);
     if (selectedDate > new Date()) {
       startBtn.disabled = false;
     } else {
@@ -20,7 +19,6 @@ flatpickr('#datetime-picker', {
         position: 'topRight',
         timeout: 3000,
       });
-
       startBtn.disabled = true;
     }
   },
@@ -28,7 +26,7 @@ flatpickr('#datetime-picker', {
 
 startBtn.addEventListener('click', handleClick);
 
-function handleClick(event) {
+function handleClick() {
   startBtn.disabled = true;
   dateInput.disabled = true;
 
