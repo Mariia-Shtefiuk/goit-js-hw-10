@@ -1,0 +1,2 @@
+const u=document.querySelector(".form");u.addEventListener("submit",a);function a(t){t.preventDefault();const o=t.currentTarget.querySelector('input[name="delay"]'),i=t.currentTarget.querySelector('input[name="state"]:checked'),s=Number(o.value),n=i.value;new Promise((e,r)=>{setTimeout(()=>{n==="fulfilled"?e(`✅ Fulfilled promise in ${s}ms`):r(`❌ Rejected promise in ${s}ms`)},s)}).then(e=>{iziToast.success({message:e,position:"topRight"})}).catch(e=>{iziToast.error({message:e,position:"topRight"})})}
+//# sourceMappingURL=2-snackbar-DrFoY44j.js.map
