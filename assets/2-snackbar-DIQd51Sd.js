@@ -1,0 +1,2 @@
+import{i as o}from"./vendor-BZoxUzx5.js";const a=document.querySelector(".form");a.addEventListener("submit",c);function c(t){t.preventDefault();const i=t.currentTarget.querySelector('input[name="delay"]'),r=t.currentTarget.querySelector('input[name="state"]:checked'),s=Number(i.value),n=r.value;new Promise((e,u)=>{setTimeout(()=>{n==="fulfilled"?e(`✅ Fulfilled promise in ${s}ms`):u(`❌ Rejected promise in ${s}ms`)},s)}).then(e=>{o.success({message:e,position:"topRight"})}).catch(e=>{o.error({message:e,position:"topRight"})})}
+//# sourceMappingURL=2-snackbar-DIQd51Sd.js.map
